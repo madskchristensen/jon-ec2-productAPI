@@ -9,14 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SearchController {
-    
-    @PostMapping("api/search")
+
+    @PostMapping("/api/search")
     public ResponseEntity<Result> getSearchResult(@RequestBody AJAXrequest req){
         System.out.println("api/search kaldet med " + req.getProduct());
+
         Result result = new Result();
+
         result.getProducts().add("Bicycle");
         result.getProducts().add("Boat");
         result.getProducts().add("Car");
+        result.getProducts().add("Apache Attack Helicopter");
+
         return ResponseEntity.ok(result);
     }
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Result {
     private List<String> products = new ArrayList<>();
+
     public Result() {
     }
 

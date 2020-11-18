@@ -1,7 +1,8 @@
 package com.joneikholm.productapi.model;
 
 public class AJAXrequest {
-    String product;
+    private String product;
+
     public AJAXrequest() {
     }
 
